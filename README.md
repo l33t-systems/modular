@@ -29,5 +29,34 @@ Before running the tests make sure you are serving the app via `ng serve`.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 =======
 # modular
+
 Modular is a development platform for building software systems using Angular and Node and other languages. 
+
+In Modular, Everything is an assembly. An assembly is a collection of instances of templates. Instance contains information about parameters 
+for initialization of an object, while the template contains information about parameters before the initialization.
+ 
+<selector></selector>
+<instance></instance>
+<assembly></assembly>
+
+<tag name="instance">
+  <template name="instance">
+    <template name="template">
+    </template>
+  </template>
+  <instance name="tag"></instance>
+</tag>
+
+<template> given an <instance> returns an <assembly>
+<assembly> stores constituting <instance> and <template>
+
+<void></void> is the "Zero" assembly with no instances <assembly></assembly>
+<first></first> is <instance><assembly><instance><assembly></assembly></instance></assembly></instance>
+<second></second> is <instance><assembly><instance><assembly><instance><assembly></assembly></instance></assembly></instance></assembly></instance>
+<first></first> is <assembly><instance><assembly></assembly></instance></assembly> 
+<either><first></first><second></second></either> is the assembly that will return one of the specified instances 
+<first></first> is the "First" assembly with a single instance
+<second></second> is the "Second" assembly with 
+
+
 >>>>>>> b551ec9990152904aa62c4bb597736038aa518f7
