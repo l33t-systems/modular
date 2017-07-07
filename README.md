@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Modular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
@@ -26,3 +27,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# modular
+Modular is a development platform for building software systems using Angular and Node and other languages. 
+>>>>>>> b551ec9990152904aa62c4bb597736038aa518f7
